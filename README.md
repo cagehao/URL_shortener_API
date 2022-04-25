@@ -1,13 +1,13 @@
 # URL_shortener_API
-Using Flask, MongoDB and python build a backend URL shortener API
-Basic Function:
+> Using Flask, MongoDB and python build a backend URL shortener API
+# Basic Function:
 (1)Given any URL input via POST to <the address>/urlshorten with set body form-data :
  KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1(the URL)
  API can return a JSON with the following properties:
 
- original - The input URL.
- short - The shortened URL. Path should contain 6 alphanumeric characters. e.g. /aKCb2g
- count - This is the number of times the same given URL has been sent to your API for shortening regardless of which client sent it.
+# original - The input URL.
+# short - The shortened URL. Path should contain 6 alphanumeric characters. e.g. /aKCb2g
+# count - This is the number of times the same given URL has been sent to your API for shortening regardless of which client sent it.
 
  all shortened URLs are globally unique; for example, https://a.very-long.url/foo?lorem=ipsum should Always return the same shortened URL.
  There can never be more than 1 record of the same shortened URL in the database. Can be validate by function 2.
