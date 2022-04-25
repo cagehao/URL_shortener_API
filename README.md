@@ -1,7 +1,7 @@
 # URL_shortener_API
 > Using Flask, MongoDB and python build a backend URL shortener API
 # Basic Function:
-(1)Given any URL input via POST to <the address>/urlshorten with set body form-data :
+(1)Given any URL input via POST to localhost/urlshorten with set body form-data :
  KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1(the URL)
  API can return a JSON with the following properties:
 
@@ -15,11 +15,11 @@
  If shortened an URL to be https://foo.bar/aKCb2g, then there cannot be another record of aKCb2g in the db.
 
  (2)Validate if there is any duplicate shortened urls in the db.
- + Using GET to <the address>/validate, 
+ + Using GET to localhost/validate, 
  The API can return a dictionary of duplicate shortened urls, the key is shortened url the value is the number of that same urls in the database
  
 (3)update the original url base using the shortened url
- Using PATCH to <the address>/update with with set body form-data:
+ Using PATCH to localhost/update with with set body form-data:
  + KEY: short_url     VALUE: https://foo.bar/3a0005(the url you want to update its original url)
  + KEY: original_url  VALUE: https://google1.com232(the updated original url)
 
