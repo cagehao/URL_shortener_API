@@ -1,3 +1,9 @@
+
+#Requirements
++ MongoDB
++ python 3
++ pymongo
++ flask
 # URL_shortener_API
 > Using Flask, MongoDB and python build a backend URL shortener API
 # Basic Function:
