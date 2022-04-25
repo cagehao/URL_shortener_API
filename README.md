@@ -5,9 +5,9 @@
  KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1(the URL)
  API can return a JSON with the following properties:
 
-1, original - The input URL.
-2, short - The shortened URL. Path should contain 6 alphanumeric characters. e.g. /aKCb2g
-2, count - This is the number of times the same given URL has been sent to your API for shortening regardless of which client sent it.
++ 1, original - The input URL.
++ 2, short - The shortened URL. Path should contain 6 alphanumeric characters. e.g. /aKCb2g
++ 3, count - This is the number of times the same given URL has been sent to your API for shortening regardless of which client sent it.
 
  all shortened URLs are globally unique; for example, https://a.very-long.url/foo?lorem=ipsum should Always return the same shortened URL.
  There can never be more than 1 record of the same shortened URL in the database. Can be validate by function 2.
