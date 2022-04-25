@@ -2,7 +2,7 @@
 > Using Flask, MongoDB and python build a backend URL shortener API
 # Basic Function:
 (1)Given any URL input via POST to localhost/urlshorten with set body form-data :
- KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1(the URL)
+ KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1 (the URL)
  API can return a JSON with the following properties:
 
 + 1, original - The input URL.
@@ -20,9 +20,9 @@
  
 (3)update the original url base using the shortened url
  Using PATCH to localhost/update with with set body form-data:
- + KEY: short_url     VALUE: https://foo.bar/3a0005(the url you want to update its original url)
- + KEY: original_url  VALUE: https://google1.com232(the updated original url)
+ + KEY: short_url     VALUE: https://foo.bar/3a0005 (the url you want to update its original url)
+ + KEY: original_url  VALUE: https://google1.com232 (the updated original url)
 
 (4)backup and delete the url data using the shortened url
   Using PATCH to <the address>/update with with set body form-data:
-  + KEY: short_url     VALUE: https://foo.bar/3a0005(the url you want to delete)
+  + KEY: short_url     VALUE: https://foo.bar/3a0005 (the url you want to delete)
