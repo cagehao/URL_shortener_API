@@ -2,7 +2,7 @@
 > Using Flask, MongoDB and python build a backend URL shortener API
 # Basic Function:
 (1)Given any URL input via POST to localhost/urlshorten with set body form-data :
- KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1 (the URL)
++ KEY=url and VALUE = https://a.very-long.url/need_to_be_shorten_532sdwasdfads1 (the URL)
  API can return a JSON with the following properties:
 
 + 1, original - The input URL.
